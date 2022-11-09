@@ -23,7 +23,7 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
       
-    - name: Create and submit SBOM
+    - name: Create and submit an SBOM
       uses: anchore/sbom-action@latest
       with:
         image: target/bookstore-v3-1.0.0-SNAPSHOT.jar
